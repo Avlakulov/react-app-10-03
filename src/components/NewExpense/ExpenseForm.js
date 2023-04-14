@@ -1,5 +1,6 @@
 import './ExpenseForm.css';
 const ExpenseForm = () => {
+  // Interactivity
   return (
     <form>
       <div className='new-expense__controls'>
