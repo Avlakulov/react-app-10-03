@@ -4,7 +4,7 @@ import ExpenseItem from './ExpenseItem';
 
 const Expenses = (props) => {
     const items = props.items;
-    console.log(items);
+    // console.log(items);
     return (
         <Card className="expenses">
             <ExpenseItem

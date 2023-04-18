@@ -1,6 +1,15 @@
+import { useState } from 'react';
 import './ExpenseForm.css';
 const ExpenseForm = () => {
+  const [newTitle, setNewTitle] = useState('');
+  const [newAmount, setNewAmount] = useState('');
+  const [newDate, setNewDate] = useState('');
+
   // Interactivity
+  function clickHandler(e){
+    e.preventDefault();
+
+  }
   return (
     <form>
       <div className='new-expense__controls'>
@@ -17,6 +26,7 @@ const ExpenseForm = () => {
           <input type='date' min='2023-01-01' max='2023-05-31'/>
         </div>
       </div>
+      <button className='new-expense__actions' onClick={clickHandler}>Add New Expense</button>
     </form>
   );
 };
